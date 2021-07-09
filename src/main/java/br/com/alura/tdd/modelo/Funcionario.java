@@ -16,10 +16,10 @@ public class Funcionario {
 		this.salario = salario;
 	}
 
+	public Funcionario(){}
 	public String getNome() {
 		return nome;
 	}
-
 	public LocalDate getDataAdmissao() {
 		return dataAdmissao;
 	}
@@ -28,7 +28,18 @@ public class Funcionario {
 		return salario;
 	}
 
-    public void reajustarSalario(BigDecimal reajuste) {
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	public void setDataAdmissao(LocalDate dataAdmissao) {
+		this.dataAdmissao = dataAdmissao;
+	}
+
+	public void setSalario(BigDecimal salario) {
+		this.salario = salario;
+	}
+
+	public void reajustarSalario(BigDecimal reajuste) {
 		this.salario = this.salario.add(reajuste);
 		arredondarSalario();
     }
