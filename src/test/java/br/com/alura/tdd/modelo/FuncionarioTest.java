@@ -17,10 +17,9 @@ public class FuncionarioTest {
         funcionario.setSalario(new BigDecimal("10000"));
         funcionario.setDataAdmissao(LocalDate.now());
 
-        assertNotNull(funcionario.getNome());
+        assertEquals("Carlos Alberto Torres", funcionario.getNome());
         assertNotNull(funcionario.getSalario());
         assertNotNull(funcionario.getDataAdmissao());
-
     }
 
 }

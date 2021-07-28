@@ -17,6 +17,7 @@ public class Funcionario {
 	}
 
 	public Funcionario(){}
+	
 	public String getNome() {
 		return nome;
 	}
